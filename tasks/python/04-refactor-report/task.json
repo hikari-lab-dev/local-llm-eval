@@ -1,0 +1,16 @@
+{
+  "id": "python/04-refactor-report",
+  "lang": "python",
+  "difficulty": "medium-hard",
+  "verify": "python3 -m pytest -q tests/",
+  "grade": "python3 -m pytest -q hidden_tests/",
+  "editable": [
+    "report.py",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/test_report.py",
+    "pytest.ini"
+  ],
+  "timeout": 900
+}

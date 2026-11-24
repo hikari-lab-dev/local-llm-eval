@@ -1,0 +1,17 @@
+{
+  "id": "ts/12-fix-session-throttle",
+  "lang": "ts",
+  "difficulty": "hard",
+  "verify": "${NODE_BIN:-node} --test tests/*.test.ts",
+  "grade": "${NODE_BIN:-node} --test hidden_tests/*.test.ts",
+  "editable": [
+    "throttle/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/limiter.test.ts",
+    "throttle/bucket.ts",
+    "biome.json"
+  ],
+  "timeout": 900
+}

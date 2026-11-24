@@ -1,0 +1,17 @@
+{
+  "id": "ts/02-fix-library-fees",
+  "lang": "ts",
+  "difficulty": "medium",
+  "verify": "${NODE_BIN:-node} --test tests/*.test.ts",
+  "grade": "${NODE_BIN:-node} --test hidden_tests/*.test.ts",
+  "editable": [
+    "library/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/catalog.test.ts",
+    "tests/lending.test.ts",
+    "biome.json"
+  ],
+  "timeout": 900
+}

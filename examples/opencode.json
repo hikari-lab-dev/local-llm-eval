@@ -1,0 +1,30 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "local-llm": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Local llama-swap",
+      "options": {
+        "baseURL": "http://127.0.0.1:8080/v1",
+        "apiKey": "local-no-auth"
+      },
+      "models": {
+        "qwen3.8-27b": {
+          "name": "Qwen3.8-27B (local)",
+          "limit": { "context": 81920, "output": 32768 }
+        },
+        "gemma4-26b-a4b": {
+          "name": "Gemma 4 26B-A4B (local)",
+          "limit": { "context": 65536, "output": 32768 }
+        }
+      }
+    }
+  },
+  "agent": {
+    "worker": {
+      "description": "コード課題を自動で編集するエージェント（eval.py run の実行役が --agent worker で起動する）",
+      "mode": "primary",
+      "steps": 60
+    }
+  }
+}

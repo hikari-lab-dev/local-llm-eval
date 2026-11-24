@@ -1,0 +1,16 @@
+{
+  "id": "python/05-parse-config",
+  "lang": "python",
+  "difficulty": "easy-medium",
+  "verify": "python3 -m pytest -q tests/",
+  "grade": "python3 -m pytest -q hidden_tests/",
+  "editable": [
+    "config_parser.py",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/test_config_parser.py",
+    "pytest.ini"
+  ],
+  "timeout": 900
+}

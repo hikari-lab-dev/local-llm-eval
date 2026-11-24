@@ -1,0 +1,18 @@
+{
+  "id": "csharp/02-fix-parking-fees",
+  "lang": "csharp",
+  "difficulty": "medium",
+  "verify": "find . -path '*/bin/*' -prune -o -path '*/obj/*' -prune -o -name '*.cs' -print -exec touch {} + ; ${DOTNET_BIN:-dotnet} test tests/ --nologo -v quiet",
+  "grade": "find . -path '*/bin/*' -prune -o -path '*/obj/*' -prune -o -name '*.cs' -print -exec touch {} + ; ${DOTNET_BIN:-dotnet} test hidden_tests/ --nologo -v quiet",
+  "editable": [
+    "ParkingFees/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/FeeCalculatorTests.cs",
+    "tests/ParkingLotTests.cs",
+    "tests/ParkingFees.Tests.csproj",
+    ".gitignore"
+  ],
+  "timeout": 900
+}

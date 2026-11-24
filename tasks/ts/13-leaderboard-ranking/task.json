@@ -1,0 +1,19 @@
+{
+  "id": "ts/13-leaderboard-ranking",
+  "lang": "ts",
+  "difficulty": "hard",
+  "verify": "${NODE_BIN:-node} --test tests/*.test.ts",
+  "grade": "${NODE_BIN:-node} --test hidden_tests/*.test.ts",
+  "editable": [
+    "leaderboard/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/rank.test.ts",
+    "leaderboard/models.ts",
+    "leaderboard/scoring.ts",
+    "leaderboard/textWidth.ts",
+    "biome.json"
+  ],
+  "timeout": 900
+}

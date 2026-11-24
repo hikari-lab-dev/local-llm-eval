@@ -1,0 +1,32 @@
+{
+ "tags": {
+  "合唱": 13,
+  "ローカルLLM": 4,
+  "経費": 5,
+  "旅行": 7,
+  "読書": 10,
+  "家電": 11
+ },
+ "broken_links": [
+  {
+   "from": "note-03.md",
+   "to": "note-99"
+  },
+  {
+   "from": "note-11.md",
+   "to": "会計メモ"
+  },
+  {
+   "from": "note-20.md",
+   "to": "note-7"
+  }
+ ],
+ "orphans": [
+  "note-01.md",
+  "note-02.md",
+  "note-08.md",
+  "note-12.md",
+  "note-15.md",
+  "note-25.md"
+ ]
+}

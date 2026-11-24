@@ -1,0 +1,19 @@
+{
+  "id": "python/13-invoice-consolidation",
+  "lang": "python",
+  "difficulty": "hard",
+  "verify": "python3 -m pytest -q tests/",
+  "grade": "python3 -m pytest -q hidden_tests/",
+  "editable": [
+    "invoice/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/test_builder_basic.py",
+    "invoice/normalize.py",
+    "invoice/categories.py",
+    "invoice/models.py",
+    "pytest.ini"
+  ],
+  "timeout": 900
+}

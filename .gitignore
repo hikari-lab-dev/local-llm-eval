@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+# 自分で実行した結果（同梱の測定結果は results/published/ にある）
+/results/results.jsonl
+/results/report.md
+/results/logs/
+/general/results/

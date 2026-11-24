@@ -1,0 +1,16 @@
+{
+  "id": "ts/04-refactor-orders",
+  "lang": "ts",
+  "difficulty": "medium-hard",
+  "verify": "${NODE_BIN:-node} --test tests/*.test.ts",
+  "grade": "${NODE_BIN:-node} --test hidden_tests/*.test.ts",
+  "editable": [
+    "orders.ts",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/orders.test.ts",
+    "biome.json"
+  ],
+  "timeout": 900
+}

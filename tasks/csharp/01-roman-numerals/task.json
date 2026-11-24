@@ -1,0 +1,17 @@
+{
+  "id": "csharp/01-roman-numerals",
+  "lang": "csharp",
+  "difficulty": "easy",
+  "verify": "find . -path '*/bin/*' -prune -o -path '*/obj/*' -prune -o -name '*.cs' -print -exec touch {} + ; ${DOTNET_BIN:-dotnet} test tests/ --nologo -v quiet",
+  "grade": "find . -path '*/bin/*' -prune -o -path '*/obj/*' -prune -o -name '*.cs' -print -exec touch {} + ; ${DOTNET_BIN:-dotnet} test hidden_tests/ --nologo -v quiet",
+  "editable": [
+    "RomanNumerals/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/RomanConverterTests.cs",
+    "tests/RomanNumerals.Tests.csproj",
+    ".gitignore"
+  ],
+  "timeout": 600
+}

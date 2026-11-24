@@ -1,0 +1,16 @@
+{
+  "id": "ts/01-format-duration",
+  "lang": "ts",
+  "difficulty": "easy",
+  "verify": "${NODE_BIN:-node} --test tests/*.test.ts",
+  "grade": "${NODE_BIN:-node} --test hidden_tests/*.test.ts",
+  "editable": [
+    "duration.ts",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/duration.test.ts",
+    "biome.json"
+  ],
+  "timeout": 600
+}

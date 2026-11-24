@@ -1,0 +1,16 @@
+{
+  "id": "python/03-add-todo-filter",
+  "lang": "python",
+  "difficulty": "medium",
+  "verify": "python3 -m pytest -q tests/",
+  "grade": "python3 -m pytest -q hidden_tests/",
+  "editable": [
+    "todo/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/test_store.py",
+    "pytest.ini"
+  ],
+  "timeout": 900
+}

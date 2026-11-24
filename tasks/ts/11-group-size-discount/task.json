@@ -1,0 +1,19 @@
+{
+  "id": "ts/11-group-size-discount",
+  "lang": "ts",
+  "difficulty": "hard",
+  "verify": "${NODE_BIN:-node} --test tests/*.test.ts",
+  "grade": "${NODE_BIN:-node} --test hidden_tests/*.test.ts",
+  "editable": [
+    "pricing/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/pipeline.test.ts",
+    "pricing/groupTiers.ts",
+    "pricing/roundYen.ts",
+    "pricing/rule.ts",
+    "biome.json"
+  ],
+  "timeout": 900
+}

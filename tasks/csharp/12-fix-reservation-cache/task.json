@@ -1,0 +1,17 @@
+{
+  "id": "csharp/12-fix-reservation-cache",
+  "lang": "csharp",
+  "difficulty": "hard",
+  "verify": "find . -path '*/bin/*' -prune -o -path '*/obj/*' -prune -o -name '*.cs' -print -exec touch {} + ; ${DOTNET_BIN:-dotnet} test tests/ --nologo -v quiet",
+  "grade": "find . -path '*/bin/*' -prune -o -path '*/obj/*' -prune -o -name '*.cs' -print -exec touch {} + ; ${DOTNET_BIN:-dotnet} test hidden_tests/ --nologo -v quiet",
+  "editable": [
+    "Reservations/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/ReservationCacheTests.cs",
+    "tests/Reservations.Tests.csproj",
+    ".gitignore"
+  ],
+  "timeout": 900
+}

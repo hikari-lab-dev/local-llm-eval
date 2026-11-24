@@ -1,0 +1,16 @@
+{
+  "id": "ts/03-add-expense-filter",
+  "lang": "ts",
+  "difficulty": "medium",
+  "verify": "${NODE_BIN:-node} --test tests/*.test.ts",
+  "grade": "${NODE_BIN:-node} --test hidden_tests/*.test.ts",
+  "editable": [
+    "expense/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/store.test.ts",
+    "biome.json"
+  ],
+  "timeout": 900
+}

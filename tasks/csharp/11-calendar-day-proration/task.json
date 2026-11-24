@@ -1,0 +1,21 @@
+{
+  "id": "csharp/11-calendar-day-proration",
+  "lang": "csharp",
+  "difficulty": "hard",
+  "verify": "find . -path '*/bin/*' -prune -o -path '*/obj/*' -prune -o -name '*.cs' -print -exec touch {} + ; ${DOTNET_BIN:-dotnet} test tests/ --nologo -v quiet",
+  "grade": "find . -path '*/bin/*' -prune -o -path '*/obj/*' -prune -o -name '*.cs' -print -exec touch {} + ; ${DOTNET_BIN:-dotnet} test hidden_tests/ --nologo -v quiet",
+  "editable": [
+    "Billing/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/SubscriptionBillerTests.cs",
+    "tests/Billing.Tests.csproj",
+    "Billing/CalendarMath.cs",
+    "Billing/IProrationStrategy.cs",
+    "Billing/FullMonthProrationStrategy.cs",
+    "Billing/SubscriptionBiller.cs",
+    ".gitignore"
+  ],
+  "timeout": 900
+}

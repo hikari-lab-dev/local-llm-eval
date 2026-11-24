@@ -1,0 +1,16 @@
+{
+  "id": "python/02-fix-inventory-bug",
+  "lang": "python",
+  "difficulty": "medium",
+  "verify": "python3 -m pytest -q tests/",
+  "grade": "python3 -m pytest -q hidden_tests/",
+  "editable": [
+    "inventory/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/test_inventory.py",
+    "pytest.ini"
+  ],
+  "timeout": 900
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ts/05-parse-cookies",
+  "lang": "ts",
+  "difficulty": "easy-medium",
+  "verify": "${NODE_BIN:-node} --test tests/*.test.ts",
+  "grade": "${NODE_BIN:-node} --test hidden_tests/*.test.ts",
+  "editable": [
+    "cookies.ts",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/cookies.test.ts",
+    "biome.json"
+  ],
+  "timeout": 900
+}

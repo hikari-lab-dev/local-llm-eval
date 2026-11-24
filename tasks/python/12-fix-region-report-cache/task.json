@@ -1,0 +1,17 @@
+{
+  "id": "python/12-fix-region-report-cache",
+  "lang": "python",
+  "difficulty": "hard",
+  "verify": "python3 -m pytest -q tests/",
+  "grade": "python3 -m pytest -q hidden_tests/",
+  "editable": [
+    "reports/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/test_summary.py",
+    "reports/data.py",
+    "pytest.ini"
+  ],
+  "timeout": 900
+}

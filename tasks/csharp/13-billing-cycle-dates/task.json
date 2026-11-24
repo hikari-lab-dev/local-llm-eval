@@ -1,0 +1,18 @@
+{
+  "id": "csharp/13-billing-cycle-dates",
+  "lang": "csharp",
+  "difficulty": "hard",
+  "verify": "find . -path '*/bin/*' -prune -o -path '*/obj/*' -prune -o -name '*.cs' -print -exec touch {} + ; ${DOTNET_BIN:-dotnet} test tests/ --nologo -v quiet",
+  "grade": "find . -path '*/bin/*' -prune -o -path '*/obj/*' -prune -o -name '*.cs' -print -exec touch {} + ; ${DOTNET_BIN:-dotnet} test hidden_tests/ --nologo -v quiet",
+  "editable": [
+    "BillingCycle/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/CycleCalculatorTests.cs",
+    "tests/BillingCycle.Tests.csproj",
+    "BillingCycle/CalendarMath.cs",
+    ".gitignore"
+  ],
+  "timeout": 900
+}

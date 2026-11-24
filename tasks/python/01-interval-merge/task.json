@@ -1,0 +1,16 @@
+{
+  "id": "python/01-interval-merge",
+  "lang": "python",
+  "difficulty": "easy",
+  "verify": "python3 -m pytest -q tests/",
+  "grade": "python3 -m pytest -q hidden_tests/",
+  "editable": [
+    "intervals.py",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/test_intervals.py",
+    "pytest.ini"
+  ],
+  "timeout": 600
+}

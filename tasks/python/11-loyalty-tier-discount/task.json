@@ -1,0 +1,16 @@
+{
+  "id": "python/11-loyalty-tier-discount",
+  "lang": "python",
+  "difficulty": "hard",
+  "verify": "python3 -m pytest -q tests/",
+  "grade": "python3 -m pytest -q hidden_tests/",
+  "editable": [
+    "cart/**",
+    "tests/**"
+  ],
+  "protected": [
+    "tests/test_pricing.py",
+    "pytest.ini"
+  ],
+  "timeout": 900
+}
